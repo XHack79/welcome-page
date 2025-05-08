@@ -1,0 +1,12 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Welcome</title>
+    </head>
+    <body>
+      <h1>Welcome, <span id="name"></span>!</h1>
+      <script>
+        document.getElementById('name').innerText = sessionStorage.getItem('username') || 'Guest';
+      </script>
+    </body>
+  </html>
